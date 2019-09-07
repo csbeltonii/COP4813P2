@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/site.css">
+<title>Give Money</title>
+</head>
+<body onload="getPage()">
+	
+<h2>Enter Payment Information</h2>
+
+<input type="radio" name="select" value="paytype" id="credit" onClick="updateForm(this)">
+<img src="./images/Visa.png" alt="Visa" width="100px" height="100px">
+<img src="./images/MasterCard.png" alt="MasterCard" width="100px" height="100px">
+<img src="./images/Discover.png" alt="Discover" width="100px" height="100px">
+<img src="./images/AmEx.png" alt="American Express" width="100px" height="100px">
+
+<input type="radio" name="select"  value="paytype" id="paypal" onClick="updateForm(this)">
+<img src="./images/PayPal.png" alt="PayPal" width="150px" height="50px">
+
+<div id="payinfo">
+
+<h3>Payment Information</h3>
+
+<form onSubmit="return validateForm();">
+
+<h3>Paypal Information</h3>
+</section>
+</div>
+
+<button type="Submit"><img src="./images/PayNow.png" alt="PayNow" width="150px" height="50px"></button>
+</form>
+</body>
+</html>
